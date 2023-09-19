@@ -164,8 +164,13 @@
         <input type="submit" value="Enviar"> 
     </form> -->
 
-    <div *ngIf="isLoading" class="loading-overlay">
+    <!-- <div *ngIf="isLoading" class="loading-overlay">
       <div class="loading-spinner"></div>
+    </div> -->
+
+    <div *ngIf="isLoading" class="loading-overlay">
+      <div class="loader"></div>
+      <p class="loading-text">ENVIANDO FORMULARIO ....</p>
     </div>
 
     <form (submit)="enviarFormulario()">

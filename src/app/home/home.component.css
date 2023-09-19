@@ -73,7 +73,7 @@ header {
     background-color: white;
 }
 
-.loading-overlay {
+/* .loading-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -98,7 +98,82 @@ header {
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  } */
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(55, 53, 53, 0.8);
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flujo a columna */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que esté en la parte superior */
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background: radial-gradient(ellipse at center, #FFF 69%, rgba(0, 0, 0, 0) 70%), linear-gradient(to right, rgba(0, 0, 0, 0) 47%, #FFF 48%, #FFF 52%, rgba(0, 0, 0, 0) 53%);
+  background-size: 40px 40px , 40px auto;
+  background-repeat: repeat-x;
+  background-position: center bottom, center -5px;
+  box-sizing: border-box;
+}
+
+.loader::before,
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  height: 120px;
+  background: radial-gradient(ellipse at center, #FFF 69%, rgba(0, 0, 0, 0) 70%), linear-gradient(to right, rgba(0, 0, 0, 0) 47%, #FFF 48%, #FFF 52%, rgba(0, 0, 0, 0) 53%);
+  background-size: 40px 40px , 40px auto;
+  background-repeat: no-repeat;
+  background-position: center bottom, center -5px;
+  transform: rotate(0deg);
+  transform-origin: 50% 0%;
+  animation: animPend 1s linear infinite alternate;
+}
+
+.loader::after {
+  animation: animPend2 1s linear infinite alternate;
+  left: 100%;
+}
+
+.loading-text {
+  font-size: 24px; /* Cambia el tamaño de fuente del texto */
+  margin-top: 20px; /* Agrega margen superior para separarlo de la animación */
+}
+
+@keyframes animPend {
+  0% {
+    transform: rotate(22deg);
   }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animPend2 {
+  0%, 55% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-22deg);
+  }
+}
+
+
 
 /* En relación al tamaño de la ventana, cambiamos la condición, en este caso si la pantalla supera los 700 px deja de cumplor la condición */
 @media(max-width: 1300px){

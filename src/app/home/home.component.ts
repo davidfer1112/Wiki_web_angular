@@ -16,10 +16,12 @@ export class HomeComponent {
   apellido: string = "";
   fechaNacimiento: string = "";
   edad: number = 0;
+  isLoading: boolean = false;
 
   constructor(private el: ElementRef, private renderer: Renderer2,private http: HttpClient) {}
 
   enviarFormulario() {
+    this.isLoading = true;
     const url = 'https://wiki-web-backend.onrender.com/usuarios';
     const body = {
       nombre: this.nombre,
@@ -33,6 +35,9 @@ export class HomeComponent {
         // Maneja la respuesta del servidor aquí si es necesario.
         console.log('Respuesta del servidor:', response);
         
+        // Desactiva la animación de carga
+        this.isLoading = false;
+    
         // Muestra una alerta de éxito
         alert('¡El formulario se ha enviado con éxito!');
         
@@ -44,6 +49,9 @@ export class HomeComponent {
       (error) => {
         // Maneja los errores aquí si es necesario.
         console.error('Error al enviar el formulario:', error);
+    
+        // Desactiva la animación de carga en caso de error
+        this.isLoading = false;
       }
     );
   }

@@ -164,6 +164,10 @@
         <input type="submit" value="Enviar"> 
     </form> -->
 
+    <div *ngIf="isLoading" class="loading-overlay">
+      <div class="loading-spinner"></div>
+    </div>
+
     <form (submit)="enviarFormulario()">
       <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" placeholder="Introduce tu nombre"></label>
       <p id="errorNombre" class="error">{{ nombreError }}</p>

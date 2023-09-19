@@ -1,0 +1,51 @@
+form {
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"]{
+    padding-left: 2vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 50%;
+    width: 30%;
+    height: 4vh;
+    color: gray;
+    justify-content: center;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #3F1D38;
+    border: transparent;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    height: 5vh;
+    margin-top: 4vh;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #693d60;
+}
+
+.error{
+    color: #E19898;
+    padding-left: 50%;
+    transition: 0.5s;
+}
+
+form p{
+    margin-top: 2%;
+}

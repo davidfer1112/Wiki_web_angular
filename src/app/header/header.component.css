@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #6f4a61;
+}
+
+header {
+    background-color: #3F1D38;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: #E19898;
+}
+
+.nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item {
+    list-style: none;
+    
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+/* Barritas del menú */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* En relación al tamaño de la ventana, cambiamos la condición, en este caso si la pantalla supera los 700 px deja de cumplor la condición */
+@media(max-width: 1300px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        padding-top: 5%;
+        z-index: 1;
+        position: fixed;
+        right: -100%;
+        top: 70px; /* Porque este es el tamaño del header */
+        gap: 50px;
+        flex-direction: column;
+        background-color: #3F1D38;
+        justify-content: flex-start;
+        width: 100%;
+        text-align: center;
+        transition: 0.1s;
+        height: 100vh;
+        font-size: 1rem;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        right: 0;
+        height: 100vh;
+        font-size: 2rem;
+    }
+
+}

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.cocoBack{
+    background-image: url("cocoBasile.jpg");
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.integrantes{
+    background-color: #A2678A;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.integrantes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre elementos */
+    align-items: center;
+}
+
+.integrante {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ajusta el ancho según tu diseño */
+}
+
+.integrante img {
+    border-radius: 10px;
+    max-width: 40%; /* Ajusta el tamaño de la imagen según tu diseño */
+}
+
+.imgright{
+    margin-right: -80px; 
+}
+
+.imgleft{
+    margin-left: -80px; 
+}
+
+.info {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+
+.descripcion{
+    background-color: #E19898;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.requerimientos{
+    background-color: #3F1D38;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.arquitectura{
+    background-color: #4D3C77;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.desarrollo{
+    background-color: #A2678A;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.pruebas{
+    background-color: #E19898;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.despliegue{
+    background-color: #3F1D38;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.contactanos{
+    background-color: #4D3C77;
+    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    min-height: 100vh;
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    position: relative;
+    isolation: isolate;
+}
+
+/* Cambiar opacidad de imagen de fondo */
+
+.cocoBack::before {
+    content: "";
+    position: absolute;
+    background: #4D3C77;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.95;
+}
+
+.cocoBack > h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* .hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+} */
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}

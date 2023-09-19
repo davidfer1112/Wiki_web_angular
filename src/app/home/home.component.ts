@@ -1,4 +1,6 @@
 import { Component, HostListener, ElementRef, Renderer2 } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +12,45 @@ export class HomeComponent {
   apellidoError: string = "";
   edadError: string = "";
   menuIsActive: boolean = false;
+  nombre: string = "";
+  apellido: string = "";
+  fechaNacimiento: string = "";
+  edad: number = 0;
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  constructor(private el: ElementRef, private renderer: Renderer2,private http: HttpClient) {}
+
+  enviarFormulario() {
+    const url = 'https://wiki-web-backend.onrender.com/usuarios';
+    const body = {
+      nombre: this.nombre,
+      apellido: this.apellido,
+      fecha_nacimiento: this.fechaNacimiento,
+      edad: this.edad
+    };
+  
+    this.http.post(url, body).subscribe(
+      (response) => {
+        // Maneja la respuesta del servidor aquí si es necesario.
+        console.log('Respuesta del servidor:', response);
+        
+        // Muestra una alerta de éxito
+        alert('¡El formulario se ha enviado con éxito!');
+        
+        // Recarga la página después de un pequeño retraso (por ejemplo, 2 segundos)
+        setTimeout(() => {
+          window.location.reload();
+        }, 500);
+      },
+      (error) => {
+        // Maneja los errores aquí si es necesario.
+        console.error('Error al enviar el formulario:', error);
+      }
+    );
+  }
+  
+
+  
+
 
   toggleMenu() {
     this.menuIsActive = !this.menuIsActive;

@@ -148,10 +148,7 @@
 
   <section class="contactanos hidden" id="contactanos">
     <h1 style="font-size: 3rem;">Formulario</h1>
-    <form>
-        <!-- <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" oninput="verificarCaracteres(this)" placeholder="Introduce tu nombre"></label>
-        <p id="errorNombre" class="error">{{ nombreError }}</p> -->
-
+    <!-- <form>
         <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" (input)="verificarCaracteres($event, 'nombre')" placeholder="Introduce tu nombre"> </label>
         <p id="errorNombre" class="error">{{ nombreError }}</p>
 
@@ -165,8 +162,23 @@
         <p id="errorEdad" class="error">{{ edadError }}</p>
   
         <input type="submit" value="Enviar"> 
+    </form> -->
 
+    <form (submit)="enviarFormulario()">
+      <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" placeholder="Introduce tu nombre"></label>
+      <p id="errorNombre" class="error">{{ nombreError }}</p>
+    
+      <label for="apellido">Apellido: <input type="text" id="apellido" name="apellido" [(ngModel)]="apellido" placeholder="Introduce tu apellido"></label>
+      <p id="errorApellido" class="error">{{ apellidoError }}</p>
+    
+      <label for="fecha">Fecha de nacimiento: <input type="date" id="fecha" name="fecha" [(ngModel)]="fechaNacimiento" required></label>
+    
+      <label for="edad">Edad: <input type="number" id="edad" name="edad" [(ngModel)]="edad" placeholder="Indica tu edad en números enteros"></label>
+      <p id="errorEdad" class="error">{{ edadError }}</p>
+    
+      <input type="submit" value="Enviar"> 
     </form>
+
   </section>
 
   

@@ -84,10 +84,14 @@ export class HomeComponent {
         }
       });
     });
-
-    const hiddenElements = this.el.nativeElement.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
+  
+    const hiddenElements = (this.el.nativeElement as HTMLElement).querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => {
+      observer.observe(el);
+    });
   }
+  
+  
 
   ngOnInit() {
     this.observeIntersections();

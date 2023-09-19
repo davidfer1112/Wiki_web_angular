@@ -2,33 +2,34 @@
     <nav class="navbar">
       <a href="#" class="nav-logo">Wiki.</a>
 
-      <ul class="nav-menu">
+      <ul class="nav-menu" [class.active]="menuIsActive">
         <li class="nav-item">
-          <a href="#integrantes" class="nav-link">Integrantes</a>
+          <a href="#integrantes" class="nav-link" (click)="toggleMenu()">Integrantes</a>
         </li>
         <li class="nav-item">
-          <a href="#descripcion" class="nav-link">Descripción del proyecto</a>
+          <a href="#descripcion" class="nav-link" (click)="toggleMenu()">Descripción del proyecto</a>
         </li>
         <li class="nav-item">
-          <a href="#requerimientos" class="nav-link">Requerimientos</a>
+          <a href="#requerimientos" class="nav-link" (click)="toggleMenu()">Requerimientos</a>
         </li>
         <li class="nav-item">
-          <a href="#arquitectura" class="nav-link">Arquitectura del proyecto</a>
+          <a href="#arquitectura" class="nav-link" (click)="toggleMenu()">Arquitectura del proyecto</a>
         </li>
         <li class="nav-item">
-          <a href="#desarrollo" class="nav-link">Desarrollo</a>
+          <a href="#desarrollo" class="nav-link" (click)="toggleMenu()">Desarrollo</a>
         </li>
         <li class="nav-item">
-          <a href="#pruebas" class="nav-link">Pruebas</a>
+          <a href="#pruebas" class="nav-link" (click)="toggleMenu()">Pruebas</a>
         </li>
         <li class="nav-item">
-          <a href="#despliegue" class="nav-link">Despliegue</a>
+          <a href="#despliegue" class="nav-link" (click)="toggleMenu()">Despliegue</a>
         </li>
         <li class="nav-item">
-          <a href="#contactanos" class="nav-link">Contáctanos</a>
+          <a href="#contactanos" class="nav-link" (click)="toggleMenu()">Contáctanos</a>
         </li>
-      </ul> 
-      <div class="hamburger">
+      </ul>
+       
+      <div class="hamburger" (click)="toggleMenu()" [class.active]="menuIsActive">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -148,18 +149,22 @@
   <section class="contactanos hidden" id="contactanos">
     <h1 style="font-size: 3rem;">Formulario</h1>
     <form>
-        <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" oninput="verificarCaracteres(this)" placeholder="Introduce tu nombre"> </label>
-        <p id="errorNombre" class="error"></p>
-  
-        <label for="apellido">Apellido: <input type="text" id="apellido" name="apellido" oninput="verificarCaracteres(this)" placeholder="Introduce tu apellido"> </label>
-        <p id="errorApellido" class="error"></p>
+        <!-- <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" oninput="verificarCaracteres(this)" placeholder="Introduce tu nombre"></label>
+        <p id="errorNombre" class="error">{{ nombreError }}</p> -->
+
+        <label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" (input)="verificarCaracteres($event, 'nombre')" placeholder="Introduce tu nombre"> </label>
+        <p id="errorNombre" class="error">{{ nombreError }}</p>
+
+        <label for="apellido">Apellido: <input type="text" id="apellido" name="apellido" (input)="verificarCaracteres($event, 'apellido')" placeholder="Introduce tu apellido"> </label>
+        <p id="errorApellido" class="error">{{ apellidoError }}</p>
+
   
         <label for="fecha">Fecha de nacimiento: <input type="date" id="fecha" name="fecha" required></label>
   
-        <label for="edad">Edad: <input type="number" id="edad" name="edad" oninput="verificarEdad(this)" placeholder="Indica tu edad en números enteros"> </label>
-        <p id="errorEdad" class="error"></p>
+        <label for="edad">Edad: <input type="number" id="edad" name="edad" name="apellido" (input)="verificarEdad($event)" placeholder="Indica tu edad en números enteros"> </label>
+        <p id="errorEdad" class="error">{{ edadError }}</p>
   
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar"> 
 
     </form>
   </section>

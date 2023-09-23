@@ -1,0 +1,41 @@
+.contenedor-descripcion{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.contenedor-descripcion table {
+    background: rgba(0, 0, 0, 0.1); 
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+
+.contenedor-descripcion tr:hover {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+
+.contenedor-descripcion th {
+    border-bottom: 1px solid #364043;
+    color: black;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+
+.contenedor-descripcion td {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.65em 1em;
+}
+
+.contenedor-descripcion h1{
+    text-align: center;
+    margin-top: 5%;
+}

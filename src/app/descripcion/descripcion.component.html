@@ -1,0 +1,198 @@
+<div class="contenedor-descripcion">
+
+    <h1>Descripción general</h1>
+
+    <p> El proyecto backend de MusicList es una aplicación desarrollada en Spring Boot que 
+        sirve como componente central de una plataforma de música en línea llamada MusicList.
+        El proyecto está diseñado para ser consumido por el frontend de la aplicación web MusicList.
+    </p>
+
+    <h1>Endpoints de MusicList API</h1>
+
+    <p> A continuación, se muestran todos los endpoints disponibles en la API de MusicList junto con 
+        una breve descripción de cada uno.
+    </p>
+    <br>
+
+    <h2>Canciones</h2>
+
+    <table>
+      <tr>
+          <th>Método</th>
+          <th>Ruta</th>
+          <th>Descripción</th>
+      </tr>
+      <tr>
+          <td>POST</td>
+          <td>/cancion/create</td>
+          <td>Crea una nueva canción.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/cancion/list</td>
+          <td>Obtiene la lista de todas las canciones.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/cancion/:id</td>
+          <td>Obtiene una canción por su ID.</td>
+      </tr>
+      <tr>
+          <td>PUT</td>
+          <td>/cancion/:id</td>
+          <td>Actualiza una canción por su ID.</td>
+      </tr>
+      <tr>
+          <td>DELETE</td>
+          <td>/cancion/:id</td>
+          <td>Elimina una canción por su ID.</td>
+      </tr>
+  </table>
+
+  <h2>Administradores</h2>
+
+  <table>
+      <tr>
+          <th>Método</th>
+          <th>Ruta</th>
+          <th>Descripción</th>
+      </tr>
+      <tr>
+          <td>POST</td>
+          <td>/admin/create</td>
+          <td>Crea un nuevo administrador.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/admin/list</td>
+          <td>Obtiene la lista de todos los administradores.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/admin/:id</td>
+          <td>Obtiene un administrador por su ID.</td>
+      </tr>
+      <tr>
+          <td>PUT</td>
+          <td>/admin/:id</td>
+          <td>Actualiza un administrador por su ID.</td>
+      </tr>
+      <tr>
+          <td>DELETE</td>
+          <td>/admin/:id</td>
+          <td>Elimina un administrador por su ID.</td>
+      </tr>
+  </table>
+
+
+  <h2>Listas de Reproducción</h2>
+
+
+  <table>
+      <tr>
+          <th>Método</th>
+          <th>Ruta</th>
+          <th>Descripción</th>
+      </tr>
+      <tr>
+          <td>POST</td>
+          <td>/genero/create</td>
+          <td>Crea una nueva lista de reproducción.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/genero/list</td>
+          <td>Obtiene la lista de todas las listas de reproducción.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/genero/:id</td>
+          <td>Obtiene una lista de reproducción por su ID.</td>
+      </tr>
+      <tr>
+          <td>PUT</td>
+          <td>/genero/:id</td>
+          <td>Actualiza una lista de reproducción por su ID.</td>
+      </tr>
+      <tr>
+          <td>DELETE</td>
+          <td>/genero/:id</td>
+          <td>Elimina una lista de reproducción por su ID.</td>
+      </tr>
+  </table>
+
+
+  <h2>Personas</h2>
+
+
+  <table >
+      <tr>
+          <th>Método</th>
+          <th>Ruta</th>
+          <th>Descripción</th>
+      </tr>
+      <tr>
+          <td>POST</td>
+          <td>/persona/create</td>
+          <td>Crea una nueva persona.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/persona/list</td>
+          <td>Obtiene la lista de todas las personas.</td>
+      </tr>
+      <tr>
+          <td>GET</td>
+          <td>/persona/:id</td>
+          <td>Obtiene una persona por su ID.</td>
+      </tr>
+      <tr>
+          <td>PUT</td>
+          <td>/persona/:id</td>
+          <td>Actualiza una persona por su ID.</td>
+      </tr>
+      <tr>
+          <td>DELETE</td>
+          <td>/persona/:id</td>
+          <td>Elimina una persona por su ID.</td>
+      </tr>
+  </table>
+
+
+    <h2>Relaciones</h2>
+
+    <table>
+        <tr>
+            <th>Método</th>
+            <th>Ruta</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/relaciones/persona/:idPersona/cancion/:idCancion</td>
+            <td>Obtiene la relación entre una persona y una canción por sus IDs.</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/relaciones/persona/:idPersona/genero/:idGenero</td>
+            <td>Obtiene la relación entre una persona y una lista de reproducción por sus IDs.</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>/relaciones/persona/:idPersona/cancion/:idCancion</td>
+            <td>Agrega una canción a una persona por sus IDs.</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>/relaciones/persona/:idPersona/genero/:idGenero</td>
+            <td>Agrega una lista de reproducción a una persona por sus IDs.</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>/relaciones/genero/:idLista/cancion/:idCancion</td>
+            <td>Agrega una canción a una lista de reproducción por sus IDs.</td>
+        </tr>
+    </table>
+
+</div>
+

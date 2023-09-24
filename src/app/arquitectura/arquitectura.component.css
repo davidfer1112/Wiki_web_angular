@@ -1,0 +1,17 @@
+.contenedor-arquitectura{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contenedor-arquitectura h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.contenedor-arquitectura .imgmvc{
+    width: 800px;
+}
+
+.contenedor-arquitectura .center-image{
+    text-align: center;
+}

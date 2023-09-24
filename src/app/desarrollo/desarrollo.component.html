@@ -1,0 +1,63 @@
+<div class="contenedor-desarrollo">
+        
+    <h1>Desarrollo</h1>
+    
+<p>
+  El proyecto backend de MusicList funciona en torno a los siguientes componentes:
+</p>
+
+  
+<ul>
+  <li>
+    Controladores (controllers): Los controladores gestionan las solicitudes HTTP entrantes 
+    y las enrutaron a las operaciones adecuadas en los servicios correspondientes.Proporcionan 
+    una interfaz para que el frontend interactúe con el backend.
+  </li>
+
+  <li>
+    Entidades (entidades): Las entidades representan los objetos fundamentales en el sistema,
+    como Administradores, Canciones, Listas de Reproducción, Usuarios, y las relaciones entre 
+    ellos. Estas entidades se mapean a tablas en la base de datos. 
+  </li>
+
+  <li>
+    Entidades (entidades): Las entidades representan los objetos fundamentales en el sistema, 
+    como Administradores, Canciones, Listas de Reproducción, Usuarios, y las relaciones entre 
+    ellos. Estas entidades se mapean a tablas en la base de datos.
+  </li>
+
+  <li>
+    Repositorios (repository): Los repositorios proporcionan métodos para acceder y manipular 
+    los datos almacenados en la base de datos. Cada entidad tiene su repositorio correspondiente 
+    que facilita la realización de operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en los 
+    objetos relacionados con esa entidad.
+  </li>
+
+  <li>
+    Servicios (services): Los servicios contienen la lógica de negocio de la aplicación. 
+    Realizan operaciones como crear, leer, actualizar y eliminar registros en la base de datos,
+    gestionar relaciones entre entidades y aplicar lógica específica del negocio.
+  </li>
+
+</ul>
+  
+
+<p>
+  El funcionamiento del proyecto se basa en la interacción entre estos componentes. 
+  Cuando un usuario envía una solicitud desde el frontend, el controlador correspondiente recibe 
+  la solicitud, realiza la validación y el enrutamiento adecuado y llama a los servicios 
+  correspondientes para realizar las operaciones necesarias en la base de datos.
+</p>   
+
+
+<p>
+  Por ejemplo, cuando un usuario normal da "like" a una canción en una lista de reproducción, 
+  el controlador captura la solicitud, verifica la autenticación y luego llama al servicio 
+  correspondiente para gestionar la relación entre el usuario y la canción, actualizando la cantidad
+  de "likes". Del mismo modo, un administrador puede utilizar el controlador para crear o eliminar
+  una lista de reproducción, lo que implica la manipulación de datos en el repositorio 
+  correspondiente. 
+</p>
+  
+
+</div>

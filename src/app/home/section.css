@@ -17,11 +17,11 @@
 
 .integrantes{
     background-color: #A2678A;
-    background-size: cover; /* Ajustar la imagen al tamaño de la sección */
-    background-position: center; /* Centrar la imagen */
-    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     min-height: 100vh;
-    color: white; /* Cambiar el color del texto para que sea legible */
+    color: white; 
     font-family: 'Poppins', sans-serif;
     display: grid;
     place-items: center;
@@ -33,7 +33,7 @@
 .integrantes-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espacio entre elementos */
+    gap: 20px; 
     align-items: center;
 }
 
@@ -44,12 +44,48 @@
     background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
-    width: 80%; /* Ajusta el ancho según tu diseño */
+    width: 80%; 
+    position: relative; 
+    perspective: 1000px; 
 }
+
 
 .integrante img {
     border-radius: 10px;
-    max-width: 40%; /* Ajusta el tamaño de la imagen según tu diseño */
+    max-width: 40%; 
+    transition: transform 0.5s; 
+}
+
+
+.integrante:hover img {
+    transform: rotateY(180deg); 
+}
+
+
+.integrante .back {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg); 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.5s; 
+}
+
+
+.integrante:hover .back {
+    opacity: 1;
+    transform: rotateY(0deg);
 }
 
 .imgright{

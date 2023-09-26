@@ -1,0 +1,657 @@
+<div class="contenedor-pruebas">
+
+    <h1>PersonaServiceTest</h1>
+    <table>
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+     
+        <tr>
+            <td>CambioPasswordTest</td>
+            <td>Cambio de Contraseña Test</td>
+            <td>Verifica que la contraseña se cambia correctamente</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>La contraseña no debe ser igual a "1234"</td>
+            <td>La contraseña se cambió correctamente a un valor distinto</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>crearPersonaTest</td>
+            <td>Crear Persona Test</td>
+            <td>Verifica la creación de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los atributos de la persona creada coinciden con los dados</td>
+            <td>La persona se creó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>modificarPersonaTest</td>
+            <td>Modificar Persona Test</td>
+            <td>Verifica la modificación de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Los atributos de la persona modificada coinciden con los dados</td>
+            <td>La persona se modificó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>listarPersonasTest</td>
+            <td>Listar Personas Test</td>
+            <td>Verifica la lista de personas</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de 3 personas</td>
+            <td>Se obtuvo una lista de 3 personas</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>eliminarPersonaTest</td>
+            <td>Eliminar Persona Test</td>
+            <td>Verifica la eliminación de una personae</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera que la persona con ID 1 se elimine correctamente</td>
+            <td>La persona con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+
+    </table>
+
+
+    <h1>AdminServerTest</h1>
+    <table>
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+     
+        <tr>
+            <td>CambioPasswordTest</td>
+            <td>Cambio de Contraseña Test</td>
+            <td>Verifica que la contraseña se cambia correctamente</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>La contraseña no debe ser igual a "1234"</td>
+            <td>La contraseña se cambió correctamente a un valor distinto</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>crearAdminTest</td>
+            <td>Crear Admin Test</td>
+            <td>Verifica la creación de un admin</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Los atributos del admin creado coinciden con los dados</td>
+            <td>El admin se creó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>modificarAdminTest</td>
+            <td>Modificar Admin Test</td>
+            <td>Verifica la modificación de un admin</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los atributos del admin modificado coinciden con los dados</td>
+            <td>El admin se modificó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>listarAdminsTest</td>
+            <td>Listar Admins Test</td>
+            <td>Verifica la lista de admins</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de 3 admins</td>
+            <td>Se obtuvo una lista de 3 admins</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>eliminarAdminTest</td>
+            <td>Eliminar Admin Test</td>
+            <td>Verifica la eliminación de un admin</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera que el admin con ID 1 se elimine correctamente</td>
+            <td>El admin con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+
+    
+
+
+    <h1>CancionServiceTest</h1>
+    <table>
+   
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+     
+        <tr>
+            <td>crearCancionTest</td>
+            <td>Crear Canción Test</td>
+            <td>Verifica la creación de una canción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Los atributos de la canción creada coinciden con los dados</td>
+            <td>La canción se creó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>modificarCancionTest</td>
+            <td>Modificar Canción Test</td>
+            <td>Verifica la modificación de una canción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los atributos de la canción modificada coinciden con los dados</td>
+            <td>La canción se modificó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>obtenerCancionPorIdTest</td>
+            <td>Obtener Canción por ID Test</td>
+            <td>Verifica la obtención de una canción por su ID</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Los atributos de la canción obtenida coinciden con los de la creada</td>
+            <td>La canción se obtuvo correctamente por su ID</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>listarCancionesTest</td>
+            <td>Listar Canciones Test</td>
+            <td>Verifica la lista de canciones</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de 3 canciones</td>
+            <td>Se obtuvo una lista de 3 canciones</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>eliminarCancionTest</td>
+            <td>Eliminar Canción Test</td>
+            <td>Verifica la eliminación de una canción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera que la canción con ID 1 se elimine correctamente</td>
+            <td>La canción con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+
+
+    <h1>ListServiceTest</h1>
+    <table>
+
+        <tr>
+            <th class="aaa">Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+     
+        <tr>
+            <td>crearListaTest</td>
+            <td>Crear Lista Test</td>
+            <td>Verifica la creación de una lista de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>El género de la lista creada coincide con el dado</td>
+            <td>La lista de reproducción se creó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>modificarListaTest</td>
+            <td>Modificar Lista Test</td>
+            <td>Verifica la modificación de una lista de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>El género de la lista modificada coincide con el dado</td>
+            <td>La lista de reproducción se modificó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>obtenerListaPorIdTest</td>
+            <td>Obtener Lista por ID Test</td>
+            <td>Verifica la obtención de una lista de reproducción por su ID</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>El género de la lista obtenida coincide con el de la creada</td>
+            <td>La lista de reproducción se obtuvo correctamente por su ID</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>listarListasTest</td>
+            <td>Listar Listas Test</td>
+            <td>Verifica la lista de listas de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de 3 listas de reproducción</td>
+            <td>Se obtuvo una lista de 3 listas de reproducción</td>
+            <td>Cumplió</td>
+        </tr>
+     
+        <tr>
+            <td>eliminarListaTest</td>
+            <td>Eliminar Lista Test</td>
+            <td>Verifica la eliminación de una lista de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera que la lista de reproducción con ID 1 se elimine correctamente</td>
+            <td>La lista de reproducción con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+
+    <h1>CancionControllerTest</h1>
+    <table>
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+        <tr>
+            <td>crearCancionTest</td>
+            <td>Crear Canción Test</td>
+            <td>Verifica la creación de una canción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los datos de la canción coinciden con los proporcionados</td>
+            <td>La canción se creó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>actualizarCancionTest</td>
+            <td>Actualizar Canción Test</td>
+            <td>Verifica la actualización de una canción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Los datos de la canción se actualizaron correctamente</td>
+            <td>La canción se actualizó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>obtenerCancionPorIdTest</td>
+            <td>Obtener Canción por ID Test</td>
+            <td>Verifica la obtención de una canción por su ID</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los datos de la canción obtenida coinciden con los de la creada</td>
+            <td>La canción se obtuvo correctamente por su ID</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>listarCancionesTest</td>
+            <td>Listar Canciones Test</td>
+            <td>Verifica la lista de canciones</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de canciones</td>
+            <td>Se obtuvo una lista de canciones</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>eliminarCancionTest</td>
+            <td>Eliminar Canción Test</td>
+            <td>Verifica la eliminación de una canción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera que la canción con ID 1 se elimine correctamente</td>
+            <td>La canción con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+    
+    <h1>PersonaControllerTest</h1>
+    <table>
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+        <tr>
+            <td>crearPersonaTest</td>
+            <td>Crear Persona Test</td>
+            <td>Verifica la creación de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los datos de la persona coinciden con los proporcionados</td>
+            <td>La persona se creó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>actualizarPersonaTest</td>
+            <td>Actualizar Persona Test</td>
+            <td>Verifica la actualización de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Los datos de la persona se actualizaron correctamente</td>
+            <td>La persona se actualizó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>obtenerPersonaPorIdTest</td>
+            <td>Obtener Persona por ID Test</td>
+            <td>Verifica la obtención de una persona por su ID</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los datos de la persona obtenida coinciden con los de la creada</td>
+            <td>La persona se obtuvo correctamente por su ID</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>listarPersonasTest</td>
+            <td>Listar Personas Test</td>
+            <td>Verifica la lista de personas</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de personas</td>
+            <td>Se obtuvo una lista de personas</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>eliminarPersonaTest</td>
+            <td>Eliminar Persona Test</td>
+            <td>Verifica la eliminación de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera que la persona con ID 1 se elimine correctamente</td>
+            <td>La persona con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+    
+
+    <h1>ListaControllerTest</h1>
+    <table>
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+        <tr>
+            <td>crearListaTest</td>
+            <td>Crear Lista Test</td>
+            <td>Verifica la creación de una lista de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>El género de la lista creada coincide con el dado</td>
+            <td>La lista de reproducción se creó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>modificarListaTest</td>
+            <td>Modificar Lista Test</td>
+            <td>Verifica la modificación de una lista de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>El género de la lista modificada coincide con el dado</td>
+            <td>La lista de reproducción se modificó exitosamente</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>obtenerListaPorIdTest</td>
+            <td>Obtener Lista por ID Test</td>
+            <td>Verifica la obtención de una lista de reproducción por su ID</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>El género de la lista obtenida coincide con el de la creada</td>
+            <td>La lista de reproducción se obtuvo correctamente por su ID</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>listarListasTest</td>
+            <td>Listar Listas Test</td>
+            <td>Verifica la lista de listas de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de 3 listas de reproducción</td>
+            <td>Se obtuvo una lista de 3 listas de reproducción</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>eliminarListaTest</td>
+            <td>Eliminar Lista Test</td>
+            <td>Verifica la eliminación de una lista de reproducción</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera que la lista de reproducción con ID 1 se elimine correctamente</td>
+            <td>La lista de reproducción con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+
+    <h1>AdminControllerTest</h1>
+    <table>
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+        <tr>
+            <td>testCrearAdmin</td>
+            <td>Creación de Administrador</td>
+            <td>Verifica que un administrador se crea correctamente</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>El administrador se crea con éxito</td>
+            <td>El administrador se creó con éxito</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testListarAdmin</td>
+            <td>Listado de Administradores</td>
+            <td>Verifica la obtención de la lista de administradores</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de administradores</td>
+            <td>Se obtuvo una lista de administradores</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testObtenerAdminPorId</td>
+            <td>Obtención de Administrador por ID</td>
+            <td>Verifica que se obtiene un administrador por su ID</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera obtener un administrador con ID específico</td>
+            <td>Se obtuvo un administrador con ID específico</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testActualizarAdmin</td>
+            <td>Actualización de Administrador</td>
+            <td>Verifica que un administrador se actualiza correctamente</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>El administrador se actualiza con éxito</td>
+            <td>El administrador se actualizó con éxito</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testEliminarAdmin</td>
+            <td>Eliminación de Administrador</td>
+            <td>Verifica que un administrador se elimina correctamente</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera eliminar un administrador con ID específico</td>
+            <td>Se eliminó un administrador con ID específico</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+
+    <h1>RelacionesControllerTest</h1>
+    <table>
+        <tr>
+            <th>Identificador de la prueba</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Diseñada por</th>
+            <th>Ejecutada por</th>
+            <th>Dependencias de las pruebas</th>
+            <th>Resultados Esperados</th>
+            <th>Resultados Reales</th>
+            <th>¿Cumplió o No Cumplió?</th>
+        </tr>
+        <tr>
+            <td>testObtenerPersona_CancionPorId</td>
+            <td>Verifica que la contraseña se cambia correctamente</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>La contraseña no debe ser igual a "1234"</td>
+            <td>La contraseña se cambió correctamente a un valor distinto</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testObtenerPersona_ListaPorId</td>
+            <td>Verifica la creación de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Maria Fernanda Cercado</td>
+            <td>Ninguna</td>
+            <td>Los atributos de la persona creada coinciden con los dados</td>
+            <td>La persona se creó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testAgregarCancion</td>
+            <td>Verifica la modificación de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Los atributos de la persona modificada coinciden con los dados</td>
+            <td>La persona se modificó exitosamente con los atributos dados</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testAgregarLista</td>
+            <td>Verifica la lista de personas</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>David Fernando Perez</td>
+            <td>Ninguna</td>
+            <td>Se espera una lista de 3 personas</td>
+            <td>Se obtuvo una lista de 3 personas</td>
+            <td>Cumplió</td>
+        </tr>
+        <tr>
+            <td>testAgregarCancionALista</td>
+            <td>Verifica la eliminación de una persona</td>
+            <td>Alejandro Uscátegui Torres</td>
+            <td>Felipe Bolívar Mancilla</td>
+            <td>Ninguna</td>
+            <td>Se espera que la persona con ID 1 se elimine correctamente</td>
+            <td>La persona con ID 1 se eliminó correctamente</td>
+            <td>Cumplió</td>
+        </tr>
+    </table>
+    
+</div>

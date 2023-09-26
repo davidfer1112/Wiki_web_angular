@@ -1,0 +1,41 @@
+.contenedor-pruebas{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 3%;
+}
+
+.contenedor-pruebas table {
+    background: rgba(0, 0, 0, 0.1); 
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+
+.contenedor-pruebas tr:hover {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+
+.contenedor-pruebas th {
+    border-bottom: 1px solid #364043;
+    color: black;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+
+.contenedor-pruebas td {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.65em 1em;
+}
+
+.contenedor-pruebas .tablaaa{
+    margin-right: -10%;
+}
+

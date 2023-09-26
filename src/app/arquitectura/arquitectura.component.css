@@ -15,3 +15,13 @@
 .contenedor-arquitectura .center-image{
     text-align: center;
 }
+
+/* Estilos para las filas */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-arquitectura .center-image img{
+    max-width: 700px;
+}

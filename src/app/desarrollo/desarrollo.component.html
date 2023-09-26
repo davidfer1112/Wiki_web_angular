@@ -58,6 +58,360 @@
   una lista de reproducción, lo que implica la manipulación de datos en el repositorio 
   correspondiente. 
 </p>
+
+<h2>Admin service</h2>
+<table>
+  <tr>
+      <td>Servicio</td>
+      <td>Descripción</td>
+      <td>Interfaces</td>
+      <td>Precondiciones</td>
+      <td>Postcondiciones</td>
+      <td>Manejo de Errores</td>
+      <td>Pruebas</td>
+  </tr>
+  <tr>
+      <td>AdminService</td>
+      <td>Servicio de administración de admins</td>
+      <td>- crearAdmin(Admin admin): Admin</td>
+      <td>- Objeto admin válido</td>
+      <td>- Admin creado y guardado en la base de datos</td>
+      <td>- Error de validación de datos, errores de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- listarAdmins(): List&lt;Admin&gt;</td>
+      <td>- N/A</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- obtenerAdminPorId(Long id): Admin</td>
+      <td>- id válido</td>
+      <td>- Admin obtenido de la base de datos o nulo si no existe</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- actualizarAdmin(Long id, Admin admin): Admin</td>
+      <td>- id válido, objeto admin válido</td>
+      <td>- Admin actualizado en la base de datos o nulo si no existe</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- eliminarAdmin(Long id): void</td>
+      <td>- id válido</td>
+      <td>- Admin eliminado de la base de datos</td>
+      <td>Sí</td>
+    </tr>
+  </table>
+
+  <h2>Cancion service</h2>
+
+  <table>
+    <tr>
+        <td>Servicio</td>
+        <td>Descripción</td>
+        <td>Interfaces</td>
+        <td>Precondiciones</td>
+        <td>Postcondiciones</td>
+        <td>Manejo de Errores</td>
+        <td>Pruebas</td>
+    </tr>
+    <tr>
+        <td>CancionService</td>
+        <td>Servicio de gestión de canciones</td>
+        <td>- crearCancion(Cancion cancion): Cancion</td>
+        <td>- Objeto cancion válido</td>
+        <td>- Canción creada y guardada en la base de datos</td>
+        <td>- Error de validación de datos, errores de base de datos</td>
+        <td>Sí</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>- listarCanciones(): List&lt;Cancion&gt;</td>
+        <td>- N/A</td>
+        <td>- Error de base de datos</td>
+        <td>Sí</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>- obtenerCancionPorId(Long id): Cancion</td>
+        <td>- id válido</td>
+        <td>- Canción obtenida de la base de datos o nulo si no existe</td>
+        <td>Sí</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>- actualizarCancion(Long id, Cancion cancion): Cancion</td>
+        <td>- id válido, objeto cancion válido</td>
+        <td>- Canción actualizada en la base de datos o nulo si no existe</td>
+        <td>Sí</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>- eliminarCancion(Long id): void</td>
+        <td>- id válido</td>
+        <td>- Canción eliminada de la base de datos</td>
+        <td>Sí</td>
+    </tr>
+</table>
+
+
+<h2>Lista service</h2>
+
+
+<table>
+  <tr>
+      <td>Servicio</td>
+      <td>Descripción</td>
+      <td>Interfaces</td>
+      <td>Precondiciones</td>
+      <td>Postcondiciones</td>
+      <td>Manejo de Errores</td>
+      <td>Pruebas</td>
+  </tr>
+  <tr>
+      <td>ListaService</td>
+      <td>Servicio de gestión de listas de reproducción</td>
+      <td>- crearLista(Lista lista): Lista</td>
+      <td>- Objeto lista válido</td>
+      <td>- Lista creada y guardada en la base de datos</td>
+      <td>- Error de validación de datos, errores de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- listarListas(): List&lt;Lista&gt;</td>
+      <td>- N/A</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- obtenerListaPorId(Long id): Lista</td>
+      <td>- id válido</td>
+      <td>- Lista obtenida de la base de datos o nulo si no existe</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- actualizarLista(Long id, Lista lista): Lista</td>
+      <td>- id válido, objeto lista válido</td>
+      <td>- Lista actualizada en la base de datos o nulo si no existe</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- eliminarLista(Long id): void</td>
+      <td>- id válido</td>
+      <td>- Lista eliminada de la base de datos</td>
+      <td>Sí</td>
+  </tr>
+</table>
+
+<h2>Persona service</h2>
+
+<table>
+  <tr>
+      <td>Servicio</td>
+      <td>Descripción</td>
+      <td>Interfaces</td>
+      <td>Precondiciones</td>
+      <td>Postcondiciones</td>
+      <td>Manejo de Errores</td>
+      <td>Pruebas</td>
+  </tr>
+  <tr>
+      <td>PersonaService</td>
+      <td>Servicio de gestión de personas</td>
+      <td>- crearPersona(Persona persona): Persona</td>
+      <td>- Objeto persona válido</td>
+      <td>- Persona creada y guardada en la base de datos</td>
+      <td>- Error de validación de datos, errores de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- listarPersonas(): List&lt;Persona&gt;</td>
+      <td>- N/A</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- obtenerPersonaPorId(Long id): Persona</td>
+      <td>- id válido</td>
+      <td>- Persona obtenida de la base de datos o nulo si no existe</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- actualizarPersona(Long id, Persona persona): Persona</td>
+      <td>- id válido, objeto persona válido</td>
+      <td>- Persona actualizada en la base de datos o nulo si no existe</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>- eliminarPersona(Long id): void</td>
+      <td>- id válido</td>
+      <td>- Persona eliminada de la base de datos</td>
+      <td>Sí</td>
+  </tr>
+</table>
+
   
+<h2>Persona_Cancion service</h2>
+<table>
+  <tr>
+      <td>Servicio</td>
+      <td>Descripción</td>
+      <td>Interfaces</td>
+      <td>Precondiciones</td>
+      <td>Postcondiciones</td>
+      <td>Manejo de Errores</td>
+      <td>Pruebas</td>
+  </tr>
+  <tr>
+      <td>Persona_CancionService</td>
+      <td>Servicio de gestión de relaciones entre personas y canciones</td>
+      <td>- crearpersona_cancion(Persona_Cancion persona_Cancion): Persona_Cancion</td>
+      <td>- Objeto persona_Cancion válido</td>
+      <td>- Relación creada y guardada en la base de datos, número de likes de la canción actualizado</td>
+      <td>- Error de validación de datos, errores de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- listarpersona_cancion(): List&lt;Persona_Cancion&gt;</td>
+      <td>- N/A</td>
+      <td>- N/A</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- obtenerpersona_cancionPorObjetos(Cancion cancion, Persona persona): Persona_Cancion</td>
+      <td>- Objetos cancion y persona válidos</td>
+      <td>- Relación obtenida de la base de datos o nulo si no existe</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- actualizarpersona_cancion(Cancion cancion, Persona persona, Persona_Cancion persona_cancion): Persona_Cancion</td>
+      <td>- Objetos cancion y persona válidos, objeto persona_cancion válido</td>
+      <td>- Relación actualizada en la base de datos, número de likes de la canción actualizado</td>
+      <td>- Error de validación de datos, errores de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- eliminarpersona_cancion(Cancion cancion, Persona persona): void</td>
+      <td>- Objetos cancion y persona válidos</td>
+      <td>- Relación eliminada de la base de datos</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+</table>
+
+<h2>Persona_lista service</h2>
+
+<table>
+  <tr>
+      <td>Servicio</td>
+      <td>Descripción</td>
+      <td>Interfaces</td>
+      <td>Precondiciones</td>
+      <td>Postcondiciones</td>
+      <td>Manejo de Errores</td>
+      <td>Pruebas</td>
+  </tr>
+  <tr>
+      <td>Persona_ListaService</td>
+      <td>Servicio de gestión de relaciones entre personas y listas de reproducción</td>
+      <td>- crearpersona_lista(Persona_Lista persona_lista): Persona_Lista</td>
+      <td>- Objeto persona_lista válido</td>
+      <td>- Relación creada y guardada en la base de datos, número de likes de la lista actualizado</td>
+      <td>- Error de validación de datos, errores de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- listarpersona_lista(): List&lt;Persona_Lista&gt;</td>
+      <td>- N/A</td>
+      <td>- N/A</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- obtenerpersona_listaPorObjetos(Lista lista, Persona persona): Persona_Lista</td>
+      <td>- Objetos lista y persona válidos</td>
+      <td>- Relación obtenida de la base de datos o nulo si no existe</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- actualizarpersona_lista(Lista lista, Persona persona, Persona_Lista persona_Lista): Persona_Lista</td>
+      <td>- Objetos lista y persona válidos, objeto persona_Lista válido</td>
+      <td>- Relación actualizada en la base de datos, número de likes de la lista actualizado</td>
+      <td>- Error de validación de datos, errores de base de datos</td>
+      <td>Sí</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>- eliminarpersona_lista(Lista lista, Persona persona): void</td>
+      <td>- Objetos lista y persona válidos</td>
+      <td>- Relación eliminada de la base de datos</td>
+      <td>- Error de base de datos</td>
+      <td>Sí</td>
+  </tr>
+</table>
 
 </div>

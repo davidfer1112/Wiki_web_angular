@@ -8,6 +8,10 @@
     margin-top: 5%;
 }
 
+/* .contenedor-arquitectura h2{
+    margin-left: 5%;
+} */
+
 .contenedor-arquitectura .imgmvc{
     width: 800px;
 }
@@ -24,5 +28,10 @@
 
 .contenedor-arquitectura .center-image img{
     max-width: 700px;
+    margin-bottom: 3%;
+}
+
+
+.contenedor-arquitectura p{
     margin-bottom: 3%;
 }

@@ -13,35 +13,87 @@
 
     
     <div class="center-image">
-        <img src="assets/images/Tablas_BD.png" alt="Tablas_BD" class="imgtabla">
+        <img src="assets/images/Tabla_BD.jpg" alt="Tablas_BD" class="imgtabla">
     </div>
 
     <h1>Diccionario de datos</h1>
 
     <h2>Admin</h2>
 
-    <ul>
-        <li>id_admin: Corresponde a la llave primaria que identificara de forma única a cada administrador,
-             este valor se asignara de manera automática, es una variable de tipo bigint, no se permitirán 
-             nulos en este espacio.
-        </li>
-        <br>
-        <li>
-            contrasenia: Esta variable almacenara la contraseña de ingreso de cada administrador la cual
-             se encontrará cifrada, será de tipo varchar y se permitirá dejar el espacio nulo, el cual 
-             pasara a llenarse con un valor NULL.
-        </li>
-        <br>
-        <li>
-            	nombre: Como lo indica el nombre la variable corresponde al nombre del administrador, 
-            será una variable de tipo varchar y se permitirá dejar el espacio nulo, el cual pasará a 
-            ßllenarse con un valor NULL.
-        </li>
+    <p>
+        Esta tabla almacena información sobre los administradores del sistema, cada fila de la tabla 
+        representa un administrador y cada columna representa un dato sobre el administrador, los datos 
+        que se almacenan son id_admin, contrasenia y nombre.
+    </p>
 
-    </ul>
+    <div class="center-image">
+        <img src="assets/images/Tabla_Admin.jpg" alt="Digrama_MVC" class="imgmvc">
+    </div>
+    
+    <h2>Cancion</h2>
 
-    
-    
+    <p>
+        Esta tabla almacena información sobre todas las canciones que se encuentran almacenadas en la 
+        base de datos, por lo que cada fila corresponde a una canción diferente y las columnas a los 
+        datos que se almacenarán que corresponderán a id_cancion, album, artista, duracion y nombre. 
+    </p>
+
+    <div class="center-image">
+        <img src="assets/images/Tabla_Cancion.jpg" alt="Digrama_MVC" class="imgmvc">
+    </div>
+
+    <h2>Lista</h2>
+
+    <p>
+        En esta tabla se encontrará la información de las todas listas a las que se encontraran vinculadas
+        las canciones, por lo que en cada fila se encontrara una lista con n canciones y en cada columna
+         los datos de cada una de ellas que corresponden al id_lista y genero. 
+    </p>
+
+    <div class="center-image">
+        <img src="assets/images/Tabla_Lista.jpg" alt="Digrama_MVC" class="imgmvc">
+    </div>
+
+
+    <h2>Persona</h2>
+
+    <p>
+        En esta tabla se almacenarán los datos de los usuarios de tipo persona que corresponden a los
+         votantes, por lo que no cuentan con las facultades de crear listas o subir canciones dentro 
+         del sistema. En cada fila de esta tabla se encontrará la información de un usuario y en las 
+         columnas los datos que poseen cada uno de ellos que son id_persona, apellido, contrasenia, 
+         correo_electronico y nombre.
+    </p>
+
+    <div class="center-image">
+        <img src="assets/images/Tabla_Persona.jpg" alt="Digrama_MVC" class="imgmvc">
+    </div>
+
+    <h2>Persona_cancion</h2>
+
+    <p>
+        Esta tabla es intermedia entre las tablas persona y canción ya que estas tienen una relación 
+        muchos a muchos, con esta se pretende facilitar las relaciones entre las dos tablas de la manera
+        más ordenada posible con el fin de garantizar que se vinculen de las variables de la mejor manera
+        posible. Esta tabla cuenta con las variables id_persona_cacion, like, id_cacion e id_persona
+    </p>
+
+    <div class="center-image">
+        <img src="assets/images/Tabla_Persona_Cancion.jpg" alt="Digrama_MVC" class="imgmvc">
+    </div>
+
+    <h2>Persona_lista</h2>
+
+    <p>
+        Por último, esta tabla es una tabla intermedia que relaciona las tablas persona y lista, 
+        ya que presentan una relación muchos a muchos, para lo cual se requieren dos llaves foráneas 
+        una de la tabla lista y otra de la tabla persona en adición a la variable id_persona_lista y like.
+    </p>
+
+    <div class="center-image">
+        <img src="assets/images/Tabla_Persona_Lista.jpg" alt="Digrama_MVC" class="imgmvc">
+    </div>
+
 
     <h1>Diagrama MVC del proyecto</h1>
 
@@ -51,6 +103,9 @@
     <div class="center-image">
         <img src="assets/images/Diagrama_paquetes.jpg" alt="Digrama_MVC" class="imgmvc">
     </div>
+    
+
+
 
     <h1>Diagramas de clases</h1>
 
